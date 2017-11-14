@@ -1,0 +1,150 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+/*#container {
+	width: 960px;
+	margin: auto;*/
+}
+
+header {
+
+}
+
+footer {
+
+
+}
+
+              /*basic border declaration*/
+
+              /*height:
+              width: 100%;
+              border: 1px solid black;
+              margin:0% 0% 0% 0%;*/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+button {
+  margin-left: 2%;
+}
+
+div {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  font-size: 1.25em;
+  margin-left: 2%
+}
+
+.box-body {
+  height: 150px;
+  background-color: pink;
+}
+
+
+.box-heading {
+  height: 50px;
+  background-color: gray;
+  padding: 1% 0 0 2%;
+  font-size: 2em;
+}
+
+
+.container {
+  width: 1024px;
+  height:650px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: green;
+}
+
+.form-textbox {
+  height: 100px;
+  width: 90%;
+  margin: 0 0 0 5%;
+}
+
+
+.inner-box{
+  height: 200px;
+}
+
+
+
+.logo {
+  border-radius: 50%;
+	width: 100px;
+	height: 100px;
+  background-color: white;
+  margin: auto;
+}
+
+
+
+.nav, .outter-box {
+  margin-bottom: 2%;
+}
+
+.navContain {
+  background-color: black;
+}
+
+#mesage-form {
+  width:100%;
+}

@@ -1,0 +1,15 @@
+body{
+	font-family:'Lekton', sans-serif;
+	background-color:#042E5E;
+}
+
+h1{
+	font-size:48px;
+	color:white;
+	text-align:center;
+}
+span{
+	margin-left:10px;
+	color:red;
+	font-weight:700;
+}

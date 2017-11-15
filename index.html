@@ -14,12 +14,18 @@
   <!-- Bootstrap JS -->
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+
+  <link href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- Firebase CDN -->
   <script src='https://cdn.firebase.com/js/client/2.4.1/firebase.js'></script>
   <!-- js -->
   <script src="app.js"></script>
+
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -34,7 +40,10 @@
 
   <div class="container">
     <div class="panel-group">
+      <div class="panel">
+
       <div class="panel panel-danger">
+
         <div class="panel-heading">post anonymously -- don't worry, it's a safe place.</div>
         <div class="panel-body">
           <form action="" id="message-form">
@@ -42,11 +51,20 @@
               <label>Message:</label>
               <textarea id="message" type="text" class="form-control"></textarea>
             </div>
+
+            <button class="btn btn-default">Post to board</button><span></span>
+
             <button class="btn btn-default">Post to board</button>
+
           </form>
         </div>
       </div>
     </div>
+
+
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Message Board</div>
 
      <div class="panel-group">
       <div class="panel panel-default">
@@ -61,6 +79,7 @@
     <div class="panel-group">
       <div class="panel panel-default">
         <div class="panel-heading">Feed</div>
+
         <div class="panel-body">
           <ul class="message-board">
           </ul>

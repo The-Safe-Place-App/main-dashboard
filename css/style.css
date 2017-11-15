@@ -6,4 +6,10 @@ body{
 h1{
 	font-size:48px;
 	color:white;
+	text-align:center;
+}
+span{
+	margin-left:10px;
+	color:red;
+	font-weight:700;
 }

@@ -8,9 +8,15 @@ $(document).ready(function() {
     // by default a form submit reloads the DOM which will subsequently reload all our JS
     // to avoid this we preventDefault()
     event.preventDefault()
+    
     // grab user message input
     var message = $('#message').val()
     if (message !== ""){
+
+
+    // grab user message input
+    var message = $('#message').val()
+
     // clear message input (for UX purposes)
     $('#message').val('')
 
@@ -26,6 +32,8 @@ $(document).ready(function() {
     else{
       $('span').text("type something in order to post!");
     }
+
+
   })
 
   // // on initialization of app (when document is ready) get fan messages
@@ -48,7 +56,10 @@ var messageClass = (function () {
         var votes = allMessages[msg].votes
 
         // create message element
+
         var $messageListElement = $('<li></li>')
+
+        var $messageListElement = $('<li class="anonymousPost"></li>')
 
         // create delete element
         var $deleteElement = $('<i class="fa fa-trash pull-right delete"></i>')
@@ -66,7 +77,11 @@ var messageClass = (function () {
         })
 
         // create down vote element
+
         var $downVoteElement = $("<i class='fa fa-thumbs-o-down pull-right' aria-hidden='true'></i>")
+
+        var $downVoteElement = $('<i class="fa fa-thumbs-down pull-right"></i>')
+
         $downVoteElement.on('click', function (e) {
           var id = $(e.target.parentNode).data('id')
           updateMessage(id, --votes)

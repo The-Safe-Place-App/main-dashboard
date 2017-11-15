@@ -13,3 +13,8 @@ span{
 	color:red;
 	font-weight:700;
 }
+.anon-tagline{
+	font-size:20px;
+	border-bottom:solid 1px;
+	background-color:#E6E7E7;
+}

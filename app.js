@@ -10,6 +10,7 @@ $(document).ready(function() {
     event.preventDefault()
     
     // grab user message input
+    // conditional for empty input field use case
     var message = $('#message').val()
     if (message !== ""){
 
@@ -61,13 +62,6 @@ var messageClass = (function () {
 
         var $messageListElement = $('<li class="anonymousPost"></li>')
 
-        // create delete element
-        var $deleteElement = $('<i class="fa fa-trash pull-right delete"></i>')
-        $deleteElement.on('click', function (e) {
-          var id = $(e.target.parentNode).data('id')
-          deleteMessage(id)
-        })
-
 
         // create up vote element
         var $upVoteElement = $('<i class="fa fa-thumbs-up pull-right"></i>')
@@ -92,9 +86,6 @@ var messageClass = (function () {
 
         // add message to li
         $messageListElement.html(message)
-
-        // add delete element
-        $messageListElement.append($deleteElement)
 
         // add voting elements
         $messageListElement.append($upVoteElement)
